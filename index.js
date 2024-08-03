@@ -19,7 +19,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     Pick-up Contact: ${decodeURIComponent(pickUpContact)}
     
-    Pick-up Item: ${decodeURIComponent(pickUpItem)}
+    Pick-up Item(s): ${decodeURIComponent(pickUpItem)}
     
     Delivery Location: ${decodeURIComponent(deliveryLocation)}
     
