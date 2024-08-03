@@ -23,7 +23,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     Delivery Location: ${decodeURIComponent(deliveryLocation)}
     
-    Delivery Contact: ${decodeURIComponent(deliveryContact)}`.trim();
+    Delivery Contact: ${decodeURIComponent(deliveryContact)}
+
+   Receiver's Name: ${decodeURIComponent(deliveryLocation)}`.trim();
+
     
     // Construct the WhatsApp URL with the encoded message
     const phoneNumber = '2348167275662'; // Replace with your phone number in international format
