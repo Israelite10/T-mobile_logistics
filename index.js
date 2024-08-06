@@ -8,6 +8,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const pickUpItem = encodeURIComponent(document.getElementById('pick-up-item').value.trim());
     const deliveryLocation = encodeURIComponent(document.getElementById('delivery-location').value.trim());
     const deliveryContact = encodeURIComponent(document.getElementById('delivery-contact').value.trim());
+    const receiverName = encodeURIComponent(document.getElementById('receiver-name').value.trim());
 
     // Construct the message to be sent via WhatsApp with constant text
     const message = `
@@ -25,7 +26,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     
     Delivery Contact: ${decodeURIComponent(deliveryContact)}
 
-   Receiver's Name: ${decodeURIComponent(deliveryLocation)}`.trim();
+   Receiver's Name: ${decodeURIComponent(receiverName)}`.trim();
 
     
     // Construct the WhatsApp URL with the encoded message
